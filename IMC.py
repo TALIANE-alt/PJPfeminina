@@ -20,3 +20,18 @@ else:
  
 #Saida formatada
 print(f"imc = {imc: .2f} - {categoria}")
+
+
+temperatura = float(input('Digite a temperatura atual:'))
+
+if temperatura < 10: 
+      categoria = 'Muito frio'
+elif temperatura < 24:
+      categoria = 'Agradável'
+elif temperatura < 30:
+      categoria = 'Quente'
+else:
+      categoria = 'Muito quente'
+
+print('temperatura = ', categoria )
+
